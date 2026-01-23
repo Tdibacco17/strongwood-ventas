@@ -17,19 +17,19 @@ interface TabData {
 const tab_title: TabData[] = [
     {
         icon: "icon-kitchen",
-        title: "Cocinas y Bodegas",
+        title: "Cocinas Integrales",
     },
     {
         icon: "icon-closet",
-        title: "Placares y Vestidores",
+        title: "Casas Completas",
     },
     {
         icon: "icon-sink",
-        title: "Vanitories y Muebles de Baño",
+        title: "Ambientes Principales",
     },
     {
         icon: "icon-desk",
-        title: "Equipamiento de Oficinas",
+        title: "Otros Muebles a Medida",
     },
 ];
 
@@ -45,29 +45,29 @@ const service_data: DataType[] = [
     {
         id: 1,
         thumb: service_img1,
-        title: "Cocinas y Bodegas",
+        title: "Cocinas Integrales",
         desc: "Diseñamos cocinas funcionales y modernas que se convierten en el corazón del hogar, aumentando el valor percibido de cada unidad que entregás.",
         list: ["Diseños a medida del plano.", "Materiales de alta durabilidad.", "Optimización máxima del espacio."],
     },
     {
         id: 2,
         thumb: service_img2,
-        title: "Placares y Vestidores",
-        desc: "Creamos soluciones de guardado inteligentes y a medida. Desde placares funcionales hasta vestidores de diseño que aprovechan cada centímetro.",
-        list: ["Interiores 100% personalizables.", "Herrajes y sistemas de primera marca.", "Adaptación a cualquier tipo de espacio."],
+        title: "Casas Completas",
+        desc: "Proyectos integrales para amoblar casas enteras, desde el diseño conceptual hasta la instalación final, optimizando espacios y creando ambientes coherentes.",
+        list: ["Diseño integral de vivienda.", "Coordinación completa del proyecto.", "Soluciones personalizadas para cada habitación."],
     },
     {
         id: 3,
         thumb: service_img3,
-        title: "Vanitories y Muebles de Baño",
-        desc: "Equipamiento para baños que combina un diseño superior con alta resistencia a la humedad, un punto clave para la durabilidad y la calidad final.",
-        list: ["Materiales aptos para zonas húmedas.", "Diseño integrado con la mesada.", "Soluciones para baños y lavaderos."],
+        title: "Ambientes Principales",
+        desc: "Equipamiento para baños y otros ambientes clave que combina un diseño superior con alta resistencia, un punto clave para la durabilidad y la calidad final.",
+        list: ["Materiales aptos para zonas húmedas.", "Diseño integrado con la mesada.", "Soluciones para baños y espacios principales."],
     },
     {
         id: 4,
         thumb: service_img4,
-        title: "Equipamiento de Oficinas",
-        desc: "Desarrollamos mobiliario corporativo a medida para oficinas y locales comerciales, creando espacios de trabajo funcionales y con una fuerte identidad de marca.",
+        title: "Otros Muebles a Medida",
+        desc: "Desarrollamos mobiliario a medida para oficinas, comercios y otros espacios, creando soluciones funcionales con identidad de marca.",
         list: ["Puestos de trabajo y escritorios.", "Muebles de guardado y archivos.", "Mostradores y equipamiento comercial."],
     },
 ];

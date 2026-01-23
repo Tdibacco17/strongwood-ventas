@@ -4,6 +4,7 @@ import { Inter, Roboto } from "next/font/google";
 import 'react-toastify/dist/ReactToastify.css';
 import Script from "next/script";
 import Providers from "./providers";
+import WhatsAppButton from "../components/common/WhatsAppButton";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const roboto = Roboto({ weight: ["300", "400", "500", "700"], subsets: ["latin"], variable: "--font-roboto" });
@@ -66,6 +67,7 @@ export default function RootLayout({
         <Providers>
           {children}
         </Providers>
+        <WhatsAppButton />
       </body>
     </html>
   )

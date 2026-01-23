@@ -64,6 +64,7 @@ const Testimonial = () => {
                                                 </div>
                                             </div>
                                             <div className="content">
+                                                <p className="testimonial-context">{item.context}</p>
                                                 <p>{item.desc}</p>
                                             </div>
                                         </SwiperSlide>

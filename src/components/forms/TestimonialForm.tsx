@@ -12,7 +12,9 @@ interface FormData {
     nombre_completo: string;
     email: string;
     telefono: string;
-    // tipo_servicio: string;
+    tipo_proyecto: string;
+    etapa_proyecto: string;
+    tiene_plano: string;
     mensaje: string; // El '?' lo hace opcional
 }
 
@@ -21,7 +23,9 @@ const schema = yup.object({
     nombre_completo: yup.string().required("El nombre es obligatorio."),
     email: yup.string().required("El correo es obligatorio.").email("Debe ser un correo válido."),
     telefono: yup.string().required("El teléfono es obligatorio."),
-    // tipo_servicio: yup.string().required("Debes seleccionar un servicio."),
+    tipo_proyecto: yup.string().required("Debes seleccionar un tipo de proyecto."),
+    etapa_proyecto: yup.string().required("Debes seleccionar la etapa del proyecto."),
+    tiene_plano: yup.string().required("Debes indicar si tienes plano o medidas."),
     mensaje: yup.string().required("El mensaje es obligatorio."),
 }).required();
 
@@ -112,8 +116,48 @@ const TestimonialForm = () => {
                     </div>
                 </div>
 
+                {/* --- Tipo de Proyecto --- */}
+                <div className="col-lg-6">
+                    <div className="contact__from-input mb-20">
+                        <label>Tipo de proyecto*</label>
+                        <select {...register("tipo_proyecto")}>
+                            <option value="">Seleccionar...</option>
+                            <option value="Cocina">Cocina</option>
+                            <option value="Ambiente completo">Ambiente completo</option>
+                            <option value="Casa completa">Casa completa</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <p className="form_error">{errors.tipo_proyecto?.message}</p>
+                    </div>
+                </div>
 
-                {/* --- Consulta o Comentario (Área de Texto) --- */}
+                {/* --- Etapa del Proyecto --- */}
+                <div className="col-lg-6">
+                    <div className="contact__from-input mb-20">
+                        <label>Etapa del proyecto*</label>
+                        <select {...register("etapa_proyecto")}>
+                            <option value="">Seleccionar...</option>
+                            <option value="Obra nueva">Obra nueva</option>
+                            <option value="Remodelación">Remodelación</option>
+                            <option value="Idea a futuro">Idea a futuro</option>
+                        </select>
+                        <p className="form_error">{errors.etapa_proyecto?.message}</p>
+                    </div>
+                </div>
+
+                {/* --- ¿Tenés plano o medidas? --- */}
+                <div className="col-lg-6">
+                    <div className="contact__from-input mb-20">
+                        <label>¿Tenés plano o medidas?*</label>
+                        <select {...register("tiene_plano")}>
+                            <option value="">Seleccionar...</option>
+                            <option value="Sí">Sí</option>
+                            <option value="En proceso">En proceso</option>
+                            <option value="No todavía">No todavía</option>
+                        </select>
+                        <p className="form_error">{errors.tiene_plano?.message}</p>
+                    </div>
+                </div>
                 <div className="col-lg-12">
                     <div className="contact__from-input mb-20">
                         <label>Consulta o comentario</label>

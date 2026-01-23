@@ -16,18 +16,10 @@ const banner_data: DataType[] = [
    {
       id: 1,
       thumb: "assets/imgs/banner/4.webp",
-      sub_title: "SOLUCIONES EN AMOBLAMIENTO",
-      title: "Fabricación de Muebles para Obras",
-      desc: (<>Soluciones integrales en cocinas, placares y vanitories. <br /> Un solo proveedor, cero complicaciones.</>),
-   },
-
-   {
-      id: 2,
-      thumb: "assets/imgs/banner/5.webp",
-      sub_title: "TU SOCIO EN OBRAS",
-      title: "El Aliado que Tu Proyecto Necesita",
-      desc: (<>Simplificá la gestión de amoblamientos  <br /> y potenciá el valor de cada una de tus unidades.</>),
-   },
+      sub_title: "Cocinas, casas completas y ambientes pensados para obra y remodelación.",
+      title: "Diseñamos y ejecutamos proyectos integrales de muebles a medida",
+      desc: (<>Trabajamos proyectos desde el diseño hasta la instalación final. <br /> Nos enfocamos en proyectos completos, no en piezas sueltas.</>),
+   }
    
 ]
 
@@ -61,7 +53,7 @@ const Banner = () => {
                            <p className="banner-text">{item.desc}</p>
                            <div className="banner-btn-area-2">
                               <a className="primary-btn-1 btn-hover" href="#contacto">
-                                  PEDIR PRESUPUESTO &nbsp; | <i className="icon-right-arrow"></i>
+                                  CONSULTAR PROYECTO &nbsp; | <i className="icon-right-arrow"></i>
                                  <span style={{ top: "147.172px", left: "108.5px" }}></span>
                               </a>
                            </div>

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
+    "@types/swiper": "^5.4.3",
     "bootstrap": "^5.3.3",
     "next": "15.2.4",
     "react": "^18.3.0",

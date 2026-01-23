@@ -9,3 +9,91 @@
 @import "../../public/assets/css/icomoon.css";
 @import "../../public/assets/css/spacing.css";
 @import "../../public/assets/css/main.css";
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+.whatsapp-float .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-100%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index: 1001;
+}
+
+.whatsapp-float:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-50%) translateX(-110%);
+}
+
+.whatsapp-float .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-left-color: #333;
+}
+
+/* Testimonial Context */
+.testimonial-context {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Form Select Styles */
+.contact__from-input select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.contact__from-input select:focus {
+  outline: none;
+  border-color: #25d366;
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1);
+}
+
+.contact__from-input select:hover {
+  border-color: #ccc;
+}

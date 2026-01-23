@@ -9,6 +9,7 @@ interface DataType {
     avatar: StaticImageData;
     name: string;
     designation: string;
+    context: string;
     desc: string;
 }
 
@@ -18,6 +19,7 @@ const testi_data: DataType[] = [
         avatar: avatar_1,
         name: "Lucila Cicciaro + Natalia Helou",
         designation: "CicciaroHelou Arquitectura",
+        context: "Cocina integral – CABA",
         desc: "“Gracias equipo de Strongwood por su profesionalismo y atención. Cumpliendo en tiempo, forma y gran predisposición! ❤”"
     },
     {
@@ -25,6 +27,7 @@ const testi_data: DataType[] = [
         avatar: avatar_2,
         name: "Carolina Lipszyc",
         designation: "Arquitecta",
+        context: "Proyecto en obra – Belgrano",
         desc: "“Muy buena atención y predisposición! Cumplieron con el tiempo de entrega. La cocina quedó super linda!”"
     },
     {
@@ -32,6 +35,7 @@ const testi_data: DataType[] = [
         avatar: avatar_1, // Reutilizamos la primera imagen para evitar errores
         name: "OJA-Arquitectos",
         designation: "Estudio de Arquitectura",
+        context: "Casa completa – Pilar",
         desc: "“Un equipo con todo el compromiso y la mejor predisposición. 100% recomendables!”"
     },
 ];
