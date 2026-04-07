@@ -1,0 +1,177 @@
+.swWrap {
+  min-height: 100vh;
+  background: #f5f5f7;
+}
+
+.swNav {
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.swLogo {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: #111111;
+}
+
+.swMain {
+  min-height: calc(100vh - 124px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px 60px;
+}
+
+.swCard {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  border-radius: 32px;
+  padding: 48px 40px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(20px);
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+  animation: fadeUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.swIcon {
+  width: 64px;
+  height: 64px;
+  background: #111111;
+  color: #ffffff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.swHeading {
+  margin: 0 0 16px;
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  letter-spacing: -0.04em;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.swLead {
+  margin: 0 0 32px;
+  color: #6e6e73;
+  line-height: 1.6;
+  font-size: 1.15rem;
+}
+
+.swSteps {
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 36px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+}
+
+.swStep {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.swStep:last-child {
+  margin-bottom: 0;
+}
+
+.swStep:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 32px;
+  bottom: -16px;
+  width: 1px;
+  border-left: 1px dashed rgba(17, 17, 17, 0.15);
+}
+
+.swStepNum {
+  width: 32px;
+  height: 32px;
+  background: rgba(17, 17, 17, 0.04);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  color: #111111;
+  z-index: 2;
+}
+
+.swStepText {
+  padding-top: 6px;
+}
+
+.swStepText h4 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+}
+
+.swStepText p {
+  margin: 0;
+  font-size: 1rem;
+  color: #6e6e73;
+  line-height: 1.55;
+}
+
+.swActions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.swBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.15s ease, filter 0.15s ease, background 0.15s ease;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.swBtnPrimary {
+  background: #111111;
+  color: #ffffff;
+}
