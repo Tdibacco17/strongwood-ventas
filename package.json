@@ -1,0 +1,40 @@
+{
+  "name": "gramen",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.0.1",
+    "@types/swiper": "^5.4.3",
+    "bootstrap": "^5.3.3",
+    "next": "15.2.4",
+    "react": "^18.3.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.0",
+    "react-google-recaptcha-v3": "^1.11.0",
+    "react-icons": "^5.5.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-modal-video": "^2.0.2",
+    "react-paginate": "^8.3.0",
+    "react-toastify": "^11.0.5",
+    "resend": "^6.0.2",
+    "swiper": "^11.2.6",
+    "yet-another-react-lightbox": "^3.22.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-modal-video": "^1.2.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "typescript": "^5"
+  }
+}
